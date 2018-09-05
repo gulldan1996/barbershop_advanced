@@ -1,0 +1,100 @@
+.page-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page-header__logo {
+    height: 85px;
+    text-align: center;
+}
+
+.page-header__logo img {
+    width: 226px;
+    height: 30px;
+    margin-top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+    .page-header {
+        background-color: #353535;
+    }
+    
+    .page-header__logo {
+        order: 2;
+        height: 400px;
+        width: 768px;
+        background-color: #6c6c6c;
+        background-image: url("../img/webp/bg-header@1x.webp");
+        background-repeat: no-repeat;
+        background-position: center -9px;
+        margin: 0 auto;
+    }
+
+    .page-header__logo img {
+        display:block;
+        width: 370px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 40px
+    }
+
+    .page-header__logo--inner {
+        position: relative;
+        height: 214px;
+        background-position: center;
+        -webkit-background-size: cover;
+        background-size: cover
+    }
+
+
+    @media (min-width: 768px) and (-webkit-min-device-pixel-ratio:1.5),(min-width:768px) and (-o-min-device-pixel-ratio:3/2),(min-width:768px) and (min-resolution:144dpi),(min-width:768px) and (min-resolution:1.5dppx) {
+        .page-header__logo {
+            background-image:url("../img/webp/bg-desktop@2x.webp");
+            -webkit-background-size: 1200px auto;
+            background-size: 1200px auto;
+        }
+    }
+
+    .page-header__logo img {
+        display: block;
+        width: 370px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 40px;
+    }     
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .page-header__logo {
+    background-image: url("../img/bg-header@1x.jpg");
+    background-size: 1338px auto;
+}
+}
+@media (min-width: $desktop-width) {
+    .page-header__logo {
+        width: 100%;
+        margin: 0 auto;
+        height: 648px;
+        background-position: center 0;
+        background-size: cover;
+    }
+    .page-header__logo img {
+        margin-top: 57px;
+    }
+    .page-header,
+    .page-header__logo {
+      outline: none;
+      background-color: transparent;
+
+      &::before {
+        display: none;
+    }
+}
+    .page-header__logo--inner {
+        width: 1200px;
+        height: 305px;
+    }
+}

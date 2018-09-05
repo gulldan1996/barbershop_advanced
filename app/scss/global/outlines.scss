@@ -1,0 +1,426 @@
+body {
+  padding: 3px !important;
+}
+
+body > *::before {
+	content: "";
+  position: absolute;
+  z-index: 8;
+
+  height: 16px;
+  padding: 1px 3px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Courier New", "monotype";
+  text-transform: none;
+  white-space: nowrap;
+}
+
+body > * > *::before {
+	content: "";
+  position: absolute;
+  z-index: 7;
+
+  height: 16px;
+  padding: 1px 3px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Courier New", "monotype";
+  text-transform: none;
+  white-space: nowrap;
+}
+
+body > * > * > *::before {
+	content: "";
+  position: absolute;
+  z-index: 6;
+
+  height: 16px;
+  padding: 1px 3px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Courier New", "monotype";
+  text-transform: none;
+  white-space: nowrap;
+}
+
+body > * > * > * > *::before {
+	content: "";
+  position: absolute;
+  z-index: 5;
+
+  height: 16px;
+  padding: 1px 3px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Courier New", "monotype";
+  text-transform: none;
+  white-space: nowrap;
+}
+
+body > * > * > * > * >*::before {
+	content: "";
+  position: absolute;
+  z-index: 4;
+
+  height: 16px;
+  padding: 1px 3px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Courier New", "monotype";
+  text-transform: none;
+  white-space: nowrap;
+}
+
+body > * > * > * > * > * > *::before {
+	content: "";
+  position: absolute;
+  z-index: 3;
+
+  height: 16px;
+  padding: 1px 3px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Courier New", "monotype";
+  text-transform: none;
+  white-space: nowrap;
+}
+
+body > * > * > * > * > * > * > *::before {
+	content: "";
+  position: absolute;
+  z-index: 2;
+
+  height: 16px;
+  padding: 1px 3px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Courier New", "monotype";
+  text-transform: none;
+  white-space: nowrap;
+}
+
+body > * > * > * > * > * > * > * > *::before {
+	content: "";
+  position: absolute;
+  z-index: 1;
+
+  height: 16px;
+  padding: 1px 3px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Courier New", "monotype";
+  text-transform: none;
+  white-space: nowrap;
+}
+
+body > * {
+	position: relative;
+
+  background-color: rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 0 2px lime;
+}
+
+body > *::before {
+  top: 0;
+  left: 0;
+
+  color: black;
+  background-color: lime;
+}
+
+body > * > * {
+	position: relative;
+
+	background-color: rgba(255, 0, 255, 0.1);
+  box-shadow: 0 0 0 2px violet;
+}
+
+body > * > *::before {
+  top: 0;
+  right: 0;
+
+  color: black;
+  background-color: violet;
+}
+
+body > * > * > * {
+	position: relative;
+
+	background-color: rgba(255, 255, 0, 0.1);
+  box-shadow: 0 0 0 2px yellow;
+}
+
+body > * > * > *::before {
+  bottom: 0;
+  right: 0;
+
+  color: black;
+  background-color: yellow;
+}
+
+body > * > * > * > * {
+	position: relative;
+
+	background-color: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 0 2px cyan;
+}
+
+body > * > * > * > *::before {
+  bottom: 0;
+  left: 0;
+
+  color: black;
+  background-color: cyan;
+}
+
+body > * > * > * > * > * {
+	position: relative;
+
+	background-color: rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 0 2px green;
+}
+
+body > * > * > * > * > *::before {
+  top: 0;
+  left: 20%;
+
+  color: white;
+  background-color: green;
+}
+
+body > * > * > * > * > * > * {
+	position: relative;
+
+	background-color: rgba(128, 0, 0, 0.1);
+  box-shadow: 0 0 0 2px maroon;
+}
+
+body > * > * > * > * > * > *::before {
+  bottom: 0;
+  left: 40%;
+
+  color: white;
+  background-color: maroon;
+}
+
+body > * > * > * > * > * > * > * {
+	position: relative;
+
+	background-color: rgba(0, 0, 255, 0.1);
+  box-shadow: 0 0 0 2px blue;
+}
+
+body > * > * > * > * > * > * > *::before {
+  top: 0;
+  left: 60%;
+
+  color: white;
+  background-color: blue;
+}
+
+body > * > * > * > * > * > * > * > * {
+	position: relative;
+
+	background-color: rgba(255, 255, 0, 0.1);
+  box-shadow: 0 0 0 2px goldenrod;
+}
+
+body > * > * > * > * > * > * > * > *::before {
+  bottom: 0;
+  left: 80%;
+
+  color: white;
+  background-color: goldenrod;
+}
+
+header::before {
+  content: "header";
+}
+
+main::before {
+  content: "main";
+}
+
+section::before {
+  content: "section";
+}
+
+footer::before {
+  content: "footer";
+}
+
+nav::before {
+  content: "nav";
+}
+
+article::before {
+  content: "article";
+}
+
+aside::before {
+  content: "aside";
+}
+
+figure::before {
+  content: "figure";
+}
+
+figcaption::before {
+  content: "figcaption";
+}
+
+div::before {
+  content: "div";
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  content: "h";
+}
+
+p::before {
+  content: "p";
+}
+
+menu::before {
+  content: "menu";
+}
+
+ol::before,
+ul::before,
+dl::before {
+  content: "list";
+}
+
+li::before {
+  content: "li";
+}
+
+dd::before {
+  content: "dd";
+}
+
+dt::before {
+  content: "dt";
+}
+
+a::before {
+  content: "a";
+}
+
+img::before {
+  content: "img";
+}
+
+area::before {
+  content: "area";
+}
+
+form::before {
+  content: "form";
+}
+
+fieldset::before {
+  content: "fieldset";
+}
+
+legend::before {
+  content: "legend";
+}
+
+label::before {
+  content: "label";
+}
+
+input::before {
+  content: "input";
+}
+
+textarea::before {
+  content: "textarea";
+}
+
+select::before {
+  content: "select";
+}
+
+button::before {
+  content: "button";
+}
+
+span::before {
+  content: "span";
+}
+
+b::before,
+strong::before {
+  content: "b";
+}
+
+i::before,
+em::before {
+  content: "i";
+}
+
+table::before {
+  content: "table";
+}
+
+tr::before {
+  content: "tr";
+}
+
+td::before,
+th::before {
+  content: "td";
+}
+
+sup::before,
+sub::before {
+  content: "su";
+}
+
+blockquote::before {
+  content: "blockquote";
+}
+
+cite::before {
+  content: "cite";
+}
+
+code::before {
+  content: "code";
+}
+
+address::before {
+  content: "address";
+}
+
+mark::before {
+  content: "mark";
+}
+
+map::before {
+  content: "map";
+}

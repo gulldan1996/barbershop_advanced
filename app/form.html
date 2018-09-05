@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Барбершоп «Бородинский» — Форма заказа</title>
+	<link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+
+	<header class="page-header">
+		<a class="page-header__logo page-header__logo--inner"">
+			<picture>
+				<source media="(min-width: 1200px)" srcset="svg/logotype-desktop.svg">
+					<source media="(min-width: 768px)" srcset="svg/logotype-tablet.svg">
+						<img class="page-header__logo-image" src="svg/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+					</picture>
+				</a>
+				<nav class="main-nav main-nav--ineer main-nav--closed">
+					<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+					<div class="main-nav__wrapper">
+						<ul class="main-nav__list site-list">
+							<li class="site-list__item">
+								<a href="index.html">Главная
+								<svg class="site-list__icon-comb" aria-hidden="true" role="presentation" width="16" height="16">
+									<use xlink:href="svg/sprite.svg#icon-comb"></use>
+								</svg>
+								</a>
+							</li>
+							<li class="site-list__item">
+								<a href="photo.html">Наши работы
+								<svg class="site-list__icon-comb" aria-hidden="true" role="presentation" width="16" height="16">
+									<use xlink:href="svg/sprite.svg#icon-comb"></use>
+								</svg>
+								</a>
+							</li>
+							<li class="site-list__item site-list__item--active">
+								<a>Записаться
+									<svg class="site-list__icon-comb" aria-hidden="true" role="presentation" width="16" height="16">
+									<use xlink:href="svg/sprite.svg#icon-comb"></use>
+								</svg>
+								</a>
+							</li>
+							<li class="site-list__item">
+								<a href="#">Контакты
+										<svg class="site-list__icon-comb" aria-hidden="true" role="presentation" width="16" height="16">
+									<use xlink:href="svg/sprite.svg#icon-comb"></use>
+								</svg>
+								</a>
+							</li>
+							<li class="site-list__item">
+								<a href="#">Olegus
+									<svg class="site-list__icon-comb" aria-hidden="true" role="presentation" width="16" height="16">
+									<use xlink:href="svg/sprite.svg#icon-comb"></use>
+								</svg>
+								</a>
+							</li>
+						</ul>
+						<ul class="main-nav__list user-list">
+							<li class="user-list__item">
+								<a class="user-list__login" href="login.html">Войти
+										<svg class="user-list__login-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M7.31 9.06l-.08.07-1.43 1.46a1.24 1.24 0 0 0-.23.32 1.17 1.17 0 0 0 .19 1.33 1.15 1.15 0 0 0 .95.37 1.18 1.18 0 0 0 .79-.37l1.85-1.86 1.72-1.72a1.15 1.15 0 0 0 .19-.27 1.11 1.11 0 0 0 .12-.6 1 1 0 0 0-.21-.58c-.14-.17-.29-.32-.44-.48L7.34 3.34a1.1 1.1 0 0 0-1-.28 1.12 1.12 0 0 0-.7.41 1.14 1.14 0 0 0-.27.67 1.19 1.19 0 0 0 .39 1l1.5 1.5.08.08H2.1a1.21 1.21 0 0 0-.72.42 1.15 1.15 0 0 0-.24 1 1.12 1.12 0 0 0 .39.62 1.14 1.14 0 0 0 .78.29h5zM12.51 8v3.93a.59.59 0 0 1-.26.5.67.67 0 0 1-.41.11h-1.27a1.18 1.18 0 0 0-.66.42 1.17 1.17 0 0 0 .21 1.67 1.1 1.1 0 0 0 .69.24h1a6 6 0 0 0 .64 0 2.32 2.32 0 0 0 .73-.24 3 3 0 0 0 .62-.42 3.14 3.14 0 0 0 .71-.86 2.88 2.88 0 0 0 .35-1.42v-8.2a2.51 2.51 0 0 0-.26-.9 3.05 3.05 0 0 0-.88-1.07 2.88 2.88 0 0 0-1.78-.62h-1.32a1.15 1.15 0 0 0-.65.37 1.12 1.12 0 0 0-.31.73 1.1 1.1 0 0 0 .18.67 1.13 1.13 0 0 0 1 .56h1.18a.62.62 0 0 1 .55.56v3.94z" fill="#fff"/><path d="M7.31 9.06h-5a1.14 1.14 0 0 1-.78-.29 1.12 1.12 0 0 1-.39-.62 1.15 1.15 0 0 1 .24-1 1.21 1.21 0 0 1 .72-.45h5.24l-.08-.08-1.5-1.5a1.19 1.19 0 0 1-.39-1 1.14 1.14 0 0 1 .27-.67 1.12 1.12 0 0 1 .7-.41 1.1 1.1 0 0 1 1 .28l3.39 3.38c.15.15.3.31.44.48a1 1 0 0 1 .21.58 1.11 1.11 0 0 1-.12.6 1.15 1.15 0 0 1-.19.27l-1.72 1.75-1.84 1.86a1.18 1.18 0 0 1-.79.37 1.15 1.15 0 0 1-.95-.37 1.17 1.17 0 0 1-.19-1.33 1.24 1.24 0 0 1 .23-.32l1.43-1.44.08-.07z" fill="#fff"/><path d="M12.51 8V4.06a.62.62 0 0 0-.51-.57h-1.18a1.13 1.13 0 0 1-1-.56 1.1 1.1 0 0 1-.18-.67 1.12 1.12 0 0 1 .36-.75 1.15 1.15 0 0 1 .65-.37h1.32a2.88 2.88 0 0 1 1.78.62 3.05 3.05 0 0 1 .85 1.04 2.51 2.51 0 0 1 .26.9v8.2a2.88 2.88 0 0 1-.35 1.42 3.14 3.14 0 0 1-.71.86 3 3 0 0 1-.62.42 2.32 2.32 0 0 1-.73.24 5.94 5.94 0 0 1-.64 0h-1a1.1 1.1 0 0 1-.69-.24 1.17 1.17 0 0 1-.21-1.6 1.18 1.18 0 0 1 .66-.42h1.27a.67.67 0 0 0 .41-.11.59.59 0 0 0 .26-.5V8.04z" fill="#fff"/></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+
+			<main class="page-main page-main--inner">
+				<section class="order">
+					<div class="subject subject__form">
+						<h2 class="subject__title">Запись на стрижку</h2>
+						<a href="home.html" class="btn subject--btn">На главную</a>
+					</div>
+					<form action="https://echo.htmlacademy.ru" class="order-form" method="post">
+						<fieldset class="order-form__group">
+							<div class="order-form__wrap order-form__wrap--person">
+								<h3 class="visually-hidden">Введите свои данныйе:</h3>
+								<div class="order-form__grid">
+									<div class="order-form__row order-form__person">
+										<p class="order-form__col order-form__col--input">
+											<input type="text" class="order-form__input" id="name" name="name" placeholder="Имя">
+											<label for="name" class="visually-hidden">Имя</label>
+										</p>
+										<p class="order-form__col order-form__col--input">
+											<input type="text" class="order-form__input" id="surname" name="surname" placeholder="Фамилия">
+											<label for="surname" class="visually-hidden">Фамилия</label>
+										</p>
+										<p class="order-form__col order-form__col--input">
+											<input type="text" class="order-form__input" id="patronymic" name="patronymic" placeholder="Отчество">
+											<label for="patronymic" class="visually-hidden">Отчество</label>
+										</p>
+									</div>
+									<div class="order-form__row order-form__contact">
+										<p class="order-form__col order-form__col--input">
+											<input type="tel" class="order-form__input" id="tel" name="tel" placeholder="Контактный телефон">
+											<label for="tel" class="visually-hidden">Контактный телефон</label>
+										</p>
+										<p class="order-form__col order-form__col--input">
+											<input type="email" class="order-form__input" id="email" name="email" placeholder="Контактный e-mail">
+											<label for="email" class="visually-hidden">Контактный e-mail</label>
+										</p>
+									</div>
+									<div class="order-form__row order-form__message">
+										<textarea name="else" id="else" cols="40" rows="10" class="order-form__textarea" placeholder="Доп. информация для мастера"></textarea>
+										<label for="else" class="visually-hidden">Доп. информация для мастера</label>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="order-form__group">
+							<div class="order-form__wrap order-form__wrap--beards">
+								<h3 class="order-form__title">Выберите модель бороды:</h3>
+								<ul class="order-form__grid">
+									<li class="order-form__col order-form__col--radio">
+										<input type="radio" class="visually-hidden order-form__input order-form__input--radio" id="admiral" name="beard" checked>
+										<label for="admiral" class="order-form__label order-form__label--radio">Адмирал
+											<svg class="order-form__icon" role="img" width="52" height="50">
+												<title>Стиль бороды "Адмирал"</title>
+												<use xlink:href="svg/sprite.svg#icon-admiral"></use></svg>
+											</label>
+										</li>
+										<li class="order-form__col order-form__col--radio">
+											<input type="radio" class="visually-hidden order-form__input order-form__input--radio" id="woodsman" name="beard">
+											<label for="woodsman" class="order-form__label order-form__label--radio">Лесоруб
+												<svg class="order-form__icon" role="img" width="58" height="69">
+													<title>Стиль бороды "Лесоруб"</title>
+													<use xlink:href="svg/sprite.svg#icon-woodsman"></use></svg>
+												</label>
+											</li>
+											<li class="order-form__col order-form__col--radio">
+												<input type="radio" class="visually-hidden order-form__input order-form__input--radio" id="polarman" name="beard">
+												<label for="polarman" class="order-form__label order-form__label--radio">Полярник
+													<svg class="order-form__icon" role="img" width="63" height="79">
+														<title>Стиль бороды "Полярник"</title>
+														<use xlink:href="svg/sprite.svg#icon-polarman"></use></svg>
+													</label>
+												</li>
+												<li class="order-form__col order-form__col--radio">
+													<input type="radio" class="visually-hidden order-form__input order-form__input--radio" id="boyarin" name="beard">
+													<label for="boyarin" class="order-form__label order-form__label--radio">Боярин
+														<svg class="order-form__icon" role="img" width="57" height="98">
+															<title>Стиль бороды "Боярин"</title>
+															<use xlink:href="svg/sprite.svg#icon-boyarin"></use></svg>
+														</label>
+													</li>
+													<li class="order-form__col order-form__col--radio">
+														<input type="radio" class="visually-hidden order-form__input order-form__input--radio" id="sage" name="beard">
+														<label for="sage" class="order-form__label order-form__label--radio">Мудрец
+															<svg class="order-form__icon" role="img" width="45" height="105">
+																<title>Стиль бороды "Мудрец"</title>
+																<use xlink:href="svg/sprite.svg#icon-sage"></use></svg>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</fieldset>
+											<fieldset class="order-form__group">
+												<div class="order-form__wrap order-form__wrap--services">
+													<h3 class="order-form__title">Дополнительные услуги</h3>
+													<ul class="order-form__grid">
+														<li class="order-form__col order-form__col--checkbox">
+															<input type="checkbox" class="visually-hidden order-form__input--checkbox" id="tinted-beard" name="tinted-beard" checked>
+															<label for="tinted-beard" class="order-form__label-check order-form__label--checkbox">Подкрасить бороду</label>
+														</li>
+														<li class="order-form__col order-form__col--checkbox">
+															<input type="checkbox" class="visually-hidden order-form__input--checkbox" id="comb-beard" name="comb-beard" checked>
+															<label for="comb-beard" class="order-form__label-check order-form__label--checkbox">Причесать бороду</label>
+														</li>
+														<li class="order-form__col order-form__col--checkbox">
+															<input type="checkbox" class="visually-hidden order-form__input--checkbox" id="remove-grayhair" name="remove-grayhair">
+															<label for="remove-grayhair" class="order-form__label-check order-form__label--checkbox">Убрать седину</label>
+														</li>
+														<li class="order-form__col order-form__col--checkbox">
+															<input type="checkbox" class="visually-hidden order-form__input--checkbox" id="screw-mustache" name="screw-mustache">
+															<label for="screw-mustache" class="order-form__label-check order-form__label--checkbox">Накрутить усы</label>
+														</li>
+														<li class="order-form__col order-form__col--checkbox">
+															<input type="checkbox" class="visually-hidden order-form__input--checkbox" id="straighten-whiskey" name="straighten-whiskey">
+															<label for="straighten-whiskey" class="order-form__label-check order-form__label--checkbox">Подровнять виски</label>
+														</li>
+														<li class="order-form__col order-form__col--checkbox">
+															<input type="checkbox" class="visually-hidden order-form__input--checkbox" id="polish-baldhead" name="polish-baldhead">
+															<label for="polish-baldhead" class="order-form__label-check order-form__label--checkbox">Отполировать лысину</label>
+														</li>
+													</ul>
+												</div>
+											</fieldset>
+											<div class="order-form__grid">
+												<button class="btn order-form--btn" type="submit">Отправить заявку</button>
+											</div>
+										</form>
+									</section>
+								</main>
+								<footer class="page-footer">
+									<div class="page-footer__wrapper">
+										<div class="page-footer__contacts contacts">
+											<b class="contacts__title">Барбершоп «Бородинский»</b>
+											<p class="contacts__text">
+												г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+												<a class="contacts__phone" href="tel:+78125556666">
+													<span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+												</a>
+											</p>
+										</div>
+										<div class="page-footer__social social">
+											<b class="social__title">Давайте дружить!</b>
+											<ul class="social__list">
+												<li class="social__item">
+													<a class="social__link" href="https://vk.com/htmlacademy">
+														<svg class="social__icon social__icon--vkontakte" width="45" height="26">
+															<use xlink:href="svg/sprite.svg#icon-vkontakte"></use>
+														</svg>Мы в Вконтакте</a>
+													</li>
+													<li class="social__item">
+														<a class="social__link" href="https://www.facebook.com/htmlacademy">
+															<svg class="social__icon social__icon--facebook" width="18" height="39">
+																<use xlink:href="svg/sprite.svg#icon-facebook"></use>
+															</svg>Мы в Фейсбуке</a>
+														</li>
+														<li class="social__item">
+															<a class="social__link" href="https://www.instagram.com/htmlacademy">
+																<svg class="social__icon social__icon--instagram" width="36" height="36">
+																	<use xlink:href="svg/sprite.svg#icon-instagram"></use>
+																</svg>Мы в Инстаграме</a>
+															</li>
+														</ul>
+													</div>
+													<div class="page-footer__copyright copyright">
+														<b class="copyright__text">Порешал:</b>
+														<a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Olegus</a>
+													</div>
+												</div>
+											</footer>
+										</body>
+										</html>
