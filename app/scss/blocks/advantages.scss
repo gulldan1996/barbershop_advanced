@@ -1,4 +1,7 @@
 .advantages {
+    width: 320px;
+    margin: 0 auto;
+
     position: relative;
 
     margin-bottom: 32px;
@@ -175,7 +178,7 @@
     .advantages::after {
         margin: 0 auto;
         width: 100%;
-        bottom: 0;
+        bottom: -75px;
     }
     .advantages .slider__toggles .slider__toggle {
         display: none;

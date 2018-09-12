@@ -1,0 +1,102 @@
+.owl-theme .owl-nav {
+  display: none;
+}
+
+.owl-theme .owl-dots {
+  display: flex;
+  justify-content: center;
+  padding: 0 25px;
+  margin-top: 25px;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  width: 9px;
+  height: 9px;
+  margin-right: 27px;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  background: none;
+  border: 1px solid $bg-grey;
+
+  transform: rotate(45deg);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px #959595;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &.active {
+    background-color: $black; 
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .owl-theme .owl-nav {
+    display: flex;
+  }
+  .owl-theme .owl-nav .owl {
+    &-prev,
+    &-next {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    padding: 0;
+    top: 0;
+    background-color: $bg-lightgrey;
+    border: 1px solid #e5ddd5;
+
+    background-image: url("../../svg/next-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+
+    cursor: pointer;
+      span {
+        display: none;
+      }
+    }
+
+    &-prev {
+      left: 0;
+    }
+
+    &-next {
+      transform: rotate(180deg);
+      right: 0;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default; 
+  }
+
+  .owl-theme .owl-dots {
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+
+    background-color: $bg-lightgrey;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owl-theme .owl-dots {
+    bottom: -52px;
+  }
+}

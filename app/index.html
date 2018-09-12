@@ -16,7 +16,7 @@
 			<img class="page-header__logo-image" src="svg/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
 		</picture>
 	</a>
-	<nav class="main-nav main-nav--closed">
+	<nav class="main-nav main-nav--closed main-nav--nojs">
 		<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 		<div class="main-nav__wrapper">
 			<ul class="main-nav__list site-list">
@@ -58,7 +58,7 @@
 			</ul>
 			<ul class="main-nav__list user-list">
 				<li class="user-list__item">
-					<a class="user-list__login" href="login.html">
+					<a class="user-list__login login-link" href="login.html">
 						<svg class="user-list__login-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M7.31 9.06l-.08.07-1.43 1.46a1.24 1.24 0 0 0-.23.32 1.17 1.17 0 0 0 .19 1.33 1.15 1.15 0 0 0 .95.37 1.18 1.18 0 0 0 .79-.37l1.85-1.86 1.72-1.72a1.15 1.15 0 0 0 .19-.27 1.11 1.11 0 0 0 .12-.6 1 1 0 0 0-.21-.58c-.14-.17-.29-.32-.44-.48L7.34 3.34a1.1 1.1 0 0 0-1-.28 1.12 1.12 0 0 0-.7.41 1.14 1.14 0 0 0-.27.67 1.19 1.19 0 0 0 .39 1l1.5 1.5.08.08H2.1a1.21 1.21 0 0 0-.72.42 1.15 1.15 0 0 0-.24 1 1.12 1.12 0 0 0 .39.62 1.14 1.14 0 0 0 .78.29h5zM12.51 8v3.93a.59.59 0 0 1-.26.5.67.67 0 0 1-.41.11h-1.27a1.18 1.18 0 0 0-.66.42 1.17 1.17 0 0 0 .21 1.67 1.1 1.1 0 0 0 .69.24h1a6 6 0 0 0 .64 0 2.32 2.32 0 0 0 .73-.24 3 3 0 0 0 .62-.42 3.14 3.14 0 0 0 .71-.86 2.88 2.88 0 0 0 .35-1.42v-8.2a2.51 2.51 0 0 0-.26-.9 3.05 3.05 0 0 0-.88-1.07 2.88 2.88 0 0 0-1.78-.62h-1.32a1.15 1.15 0 0 0-.65.37 1.12 1.12 0 0 0-.31.73 1.1 1.1 0 0 0 .18.67 1.13 1.13 0 0 0 1 .56h1.18a.62.62 0 0 1 .55.56v3.94z" fill="#fff"/><path d="M7.31 9.06h-5a1.14 1.14 0 0 1-.78-.29 1.12 1.12 0 0 1-.39-.62 1.15 1.15 0 0 1 .24-1 1.21 1.21 0 0 1 .72-.45h5.24l-.08-.08-1.5-1.5a1.19 1.19 0 0 1-.39-1 1.14 1.14 0 0 1 .27-.67 1.12 1.12 0 0 1 .7-.41 1.1 1.1 0 0 1 1 .28l3.39 3.38c.15.15.3.31.44.48a1 1 0 0 1 .21.58 1.11 1.11 0 0 1-.12.6 1.15 1.15 0 0 1-.19.27l-1.72 1.75-1.84 1.86a1.18 1.18 0 0 1-.79.37 1.15 1.15 0 0 1-.95-.37 1.17 1.17 0 0 1-.19-1.33 1.24 1.24 0 0 1 .23-.32l1.43-1.44.08-.07z" fill="#fff"/><path d="M12.51 8V4.06a.62.62 0 0 0-.51-.57h-1.18a1.13 1.13 0 0 1-1-.56 1.1 1.1 0 0 1-.18-.67 1.12 1.12 0 0 1 .36-.75 1.15 1.15 0 0 1 .65-.37h1.32a2.88 2.88 0 0 1 1.78.62 3.05 3.05 0 0 1 .85 1.04 2.51 2.51 0 0 1 .26.9v8.2a2.88 2.88 0 0 1-.35 1.42 3.14 3.14 0 0 1-.71.86 3 3 0 0 1-.62.42 2.32 2.32 0 0 1-.73.24 5.94 5.94 0 0 1-.64 0h-1a1.1 1.1 0 0 1-.69-.24 1.17 1.17 0 0 1-.21-1.6 1.18 1.18 0 0 1 .66-.42h1.27a.67.67 0 0 0 .41-.11.59.59 0 0 0 .26-.5V8.04z" fill="#fff"/></svg>Войти</a>
 					</li>
 				</ul>
@@ -119,15 +119,15 @@
 		<div class="advantages__wrapper slider">
 			<h2 class="visually-hidden">Наши преимущества</h2>
 			<ul class="advantages__list slider__list">
-				<li class="advantages__item advantages__item--fast slider__item">
+				<li class="advantages__item advantages__item--fast item">
 					<h3 class="advantages__title">Быстро</h3>
 					<p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки.</p>
 				</li>
-				<li class="advantages__item advantages__item--cool slider__item">
+				<li class="advantages__item advantages__item--cool item">
 					<h3 class="advantages__title">Круто</h3>
 					<p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
 				</li>
-				<li class="advantages__item advantages__item--price slider__item">
+				<li class="advantages__item advantages__item--price item">
 					<h3 class="advantages__title">Дорого</h3>
 					<p class="advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
 				</li>
@@ -171,8 +171,8 @@
 		<div class="reviews__wrapper slider">
 			<h2 class="reviews__title">Отзывы о нас</h2>
 			<a class="reviews__write button" href="#">Оставить свой</a>
-			<div class="reviews__list  slider__list">
-				<blockquote class="reviews__item  slider__item">
+			<div class="reviews__list slider__list owl-carousel owl-theme">
+				<blockquote class="reviews__item item">
 					<p class="reviews__author-picture">
 						 <picture>
               	<source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/trevis-photo@1x.webp 1x, img/webp/trevis-photo@2x.webp 2x"">
@@ -187,29 +187,38 @@
 						<p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
 				</div>
 				</blockquote>
-				<blockquote class="reviews__item  slider__item">
+				<blockquote class="reviews__item item">
 					<p class="reviews__author-picture">
-						<img class="reviews__author-image" src="img/picture-john.jpg" width="50" height="33" alt="Фото Джона Смита">
+						<picture>
+            	<source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/reviews-02-desktop@1x.webp 1x, img/webp/reviews-02-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/reviews-02-tablet@1x.webp 1x, img/webp/reviews-02-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/reviews-02-mobile@1x.webp 1x, img/webp/reviews-02-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/reviews-02-desktop@1x.jpg 1x, img/reviews-02-desktop@2x.jpg 2x" >
+              <source media="(min-width: 768px)" srcset="img/reviews-02-tablet@1x.jpg 1x, img/reviews-02-tablet@2x.jpg 2x" >
+              <img class="reviews__author-image" src="img/reviews-02-mobile@1x.jpg" srcset="img/reviews-02-mobile@2x.jpg 2x" alt="Фото Джона Смита">
+    				</picture>
 					</p>
+					<div class="reviews__holder">
 					<cite class="reviews__author-name">Джон Смит</cite>
-					<p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
+					<p class="reviews__text">Отличную стрижку мне сделали ребята. Господа вообще джентельмены! Роскошно. Просто эксельсиор!</p>
+				</div>
 				</blockquote>
-				<blockquote class="reviews__item  slider__item">
+				<blockquote class="reviews__item item">
 					<p class="reviews__author-picture">
-						<img class="reviews__author-image" src="img/picture-ivan.jpg" width="50" height="33" alt="Фото Ивана Бородайло">
+					<picture>
+          	<source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/reviews-03-desktop@1x.webp 1x, img/webp/reviews-03-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/reviews-03-tablet@1x.webp 1x, img/webp/reviews-03-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/reviews-03-mobile@1x.webp 1x, img/webp/reviews-03-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/reviews-03-desktop@1x.jpg 1x, img/reviews-03-desktop@2x.jpg 2x" >
+            <source media="(min-width: 768px)" srcset="img/reviews-03-tablet@1x.jpg 1x, img/reviews-03-tablet@2x.jpg 2x" >
+            <img class="reviews__author-image" src="img/reviews-03-mobile@1x.jpg" srcset="img/reviews-03-mobile@2x.jpg 2x" alt="Фото Ивана Бородайло">
+    			</picture>
 					</p>
+					<div class="reviews__holder">
 					<cite class="reviews__author-name">Иван Бородайло</cite>
-					<p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
+					<p class="reviews__text">В Бородинском ваша борода будет самой бородатой бородой в мире! Благодаря Бородинскому Вашу бороду никто не перебородит!</p>
+				</div>
 				</blockquote>
-				<button class="reviews__arrow reviews__arrow--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
-				<button class="reviews__arrow reviews__arrow--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
-			</div>
-			<p class="reviews__toggles slider__toggles">
-				<button class="slider__toggle slider__toggle--active" type="button">1</button>
-				<button class="slider__toggle" type="button">2</button>
-				<button class="slider__toggle" type="button">3</button>
-			</p>
-		</div>
 	</section>
 </main>
 
@@ -248,11 +257,39 @@
 				</ul>
 			</div>
 			<div class="page-footer__copyright copyright">
-				<b class="copyright__text">Порешал:</b>
-				<a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Olegus</a>
+				<b class="copyright__text">by to:</b>
+				<a class="button copyright__link" href="">Oleg</a>
 			</div>
 		</div>
 	</footer>
-	<script type="js/common.js"></script>
+	<section class="modal modal--login"> 
+		<!-- modal--show -->
+      <h2 class="modal__title">Личный кабинет</h2>
+      <p class="modal__text">Введите свой логин и пароль, чтобы войти</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal__box">
+          <p class="modal__inner">
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="modal__input modal__input--user" id="user-login" type="text" name="login" placeholder="Логин">
+          </p>
+          <p class="modal__inner">
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="modal__input modal__input--password" id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+        </div>
+        <p class="modal__inner--help">
+          <input class="visually-hidden modal__input--checkbox" type="checkbox" name="remember" id="remember-me">
+          <label class="modal__label--checkbox" for="remember-me">Запомните меня</label>
+          <a class="modal__restore" href="">Я забыл пароль!</a>
+        </p>
+        <div class="modal__button">
+          <button class="modal__submit" type="submit">Войти <span class="modal__submit--office">в личный кабинет</span></button>
+          <button class="modal__close" type="button">Закрыть</button>
+        </div>
+      </form>
+    </section>
+	<script src="js/scripts.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 </body>
 </html>

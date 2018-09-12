@@ -25,22 +25,13 @@
     .page-header__logo {
         order: 2;
         height: 400px;
-        width: 768px;
+        width: 100%;
         background-color: #6c6c6c;
         background-image: url("../img/webp/bg-header@1x.webp");
         background-repeat: no-repeat;
         background-position: center -9px;
         margin: 0 auto;
     }
-
-    .page-header__logo img {
-        display:block;
-        width: 370px;
-        height: auto;
-        margin: 0 auto;
-        margin-top: 40px
-    }
-
     .page-header__logo--inner {
         position: relative;
         height: 214px;
@@ -63,7 +54,7 @@
         width: 370px;
         height: auto;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 57px;
     }     
 }
 
@@ -80,9 +71,6 @@
         height: 648px;
         background-position: center 0;
         background-size: cover;
-    }
-    .page-header__logo img {
-        margin-top: 57px;
     }
     .page-header,
     .page-header__logo {

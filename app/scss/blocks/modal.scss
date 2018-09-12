@@ -1,0 +1,330 @@
+.modal {
+    position: fixed;
+
+    display: none;
+
+    color: #000000;
+
+    background-color: #f8f5f2;
+    -webkit-box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+            box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+}
+.modal--login {
+    top: 135px;
+    left: 50%;
+    z-index: 10;
+
+    width: 320px;
+    margin-left: -160px;
+    padding-top: 33px;
+    padding-right: 20px;
+    padding-bottom: 37px;
+    padding-left: 20px;
+}
+.modal-show {
+    display: block;
+
+    -webkit-animation: bounce 0.8s;
+    /* animation: bounce .6s; */
+}
+.modal__title {
+    margin: 0;
+
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.modal__text {
+    text-align: center;
+}
+.modal__inner {
+    margin: 0;
+    margin-bottom: 6px;
+}
+.modal__inner .modal__input {
+    width: 100%;
+    padding: 10px 45px 13px 20px;
+    padding-left: 28px;
+
+    font: inherit;
+    line-height: 30px;
+    color: #000000;
+
+    border: 1px solid #e5ddd5;
+    outline: 0;
+    &:hover,
+    &:active {
+        border-color: $bg-darkgrey;
+    }
+    &::placeholder {
+        color: #000000;
+    }
+}
+.modal__input:focus {
+    border-color: #999999;
+}
+.modal__input--user {
+    background-image: url("../../svg/user.svg");
+    background-repeat: no-repeat;
+    background-position: 245px center;
+    background-size: 16px 16px;
+}
+.modal__input--password {
+    background-image: url("../../svg/lock.svg");
+    background-repeat: no-repeat;
+    background-position: 245px center;
+    background-size: 16px 16px;
+}
+.modal__label--checkbox {
+    position: relative;
+
+    margin: 0;
+    padding-left: 50px;
+
+    cursor: pointer;
+}
+.modal__label--checkbox::before {
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    width: 33px;
+    height: 33px;
+
+    border: 1px solid #e5ddd5;
+    background-color: #ffffff;
+
+    content: "";
+}
+.modal__inner--help {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 22px;
+    margin-bottom: 25px;
+}
+.modal__label--checkbox:hover {
+    color: #826550;
+    text-decoration: underline;
+}
+
+.modal__label--checkbox:active {
+    color: #6a4d38;
+    text-decoration: none;
+}
+.modal__label--checkbox:hover::before {
+    border-color: #d5c9bd;
+}
+
+.modal__label--checkbox:active::before {
+    background-color: #d5c9bd;
+    background-image: url("../../svg/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px 16px;
+}
+
+.modal__input--checkbox:checked + .modal__label--checkbox::before {
+    background-color: #ffffff;
+    background-image: url("../../svg/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px 16px;
+}
+
+.modal__input--checkbox:checked + .modal__label--checkbox:active::before {
+    background-color: #d5c9bd;
+    background-image: none;
+    box-shadow: none;
+}
+.modal__restore {
+    display: block;
+
+    color: #6a4d38;
+    text-decoration: underline;
+}
+.modal__submit--office {
+    display: none;
+}
+.modal__button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            justify-content: space-between;;
+
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+
+.modal__submit {
+    display: block;
+    width: 100%;
+    width: 130px;;
+    padding: 12px;
+
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border: 1px solid #826550;
+    background-color: #826550;
+
+    cursor: pointer;
+}
+
+.modal__submit:hover {
+    color: #ffffff;
+    text-decoration: none;
+
+    border-color: #6a4d38;;
+    background-color: #6a4d38;
+}
+
+.modal__submit:active {
+    color: rgba(255,255,255,0.3);
+
+    border-color: #6a4d38;;
+    background-color: #6a4d38;
+}
+
+.modal__submit--office {
+    display: none;
+}
+
+.modal__submit:focus {
+    outline: 0;
+}
+
+.modal__submit--failure,
+.modal__submit--success {
+    width: 180px;
+    margin: auto;
+}
+.modal__close {
+    display: block;
+    width: 100%;
+    width: 130px;;
+    padding: 12px;
+
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border: 1px solid #e5ddd5;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.modal__close:hover {
+    color: #000000;
+    text-decoration: none;
+
+    border-color: #d5c9bd;;
+    background-color: transparent;
+}
+
+.modal__close:active {
+    color: rgba(0,0,0,0.3);
+
+    border-color: #d5c9bd;;
+    background-color: #d5c9bd;
+}
+
+.modal__close:focus {
+    outline: 0;
+}
+
+// Go to the tablet width 
+
+
+@media (min-width: $tablet-width) {
+    .modal--login {
+
+        width: 460px;
+        margin-left: -230px;
+        padding: 55px 70px 57px;
+    }
+    .modal__submit {
+        width: 100%;
+        padding: 14px;
+
+        font-size: 20px;
+    }
+    .modal__title {
+        font-size: 40px;
+    }
+    .modal__submit--office {
+        display: inline-block;
+    }
+    .modal__close {
+        position: absolute;
+        top: 75px;
+        right: -110px;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 0;
+
+        border: 0;
+        background-color: transparent;
+
+        cursor: pointer;
+    }
+    .modal__close::after,
+    .modal__close::before {
+        position: absolute;
+        top: 19px;
+        left: 2px;
+
+        width: 35px;
+        height: 2px;
+
+        background-color: #d0d0d0;
+
+        content: "";
+    }
+
+    .modal__close::before {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+
+    .modal__close::after {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    }
+    .modal__inner .modal__input {
+        padding: 20px 25px;
+        padding-right: 50px;
+
+        font-size: 24px;
+    }
+    .modal__input--user {
+    	background-position: 275px center;
+   		background-size: 19px 19px;
+    }
+    .modal__input--password {
+    	background-position: 275px center;
+   		background-size: 19px 19px;
+    }
+}
+@media (min-width: $desktop-width) {
+}
